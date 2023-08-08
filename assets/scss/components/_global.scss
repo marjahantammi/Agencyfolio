@@ -1,0 +1,17 @@
+
+//margin
+
+.mt-60{
+    margin-top: 60px;
+    @media (max-width: 991px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 575px) {
+        margin-top: 20px;
+    }
+}
+//color
+//text color
+.tcn-100{
+    color: var(--n-100);
+}

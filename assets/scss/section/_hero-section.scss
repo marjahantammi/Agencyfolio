@@ -1,0 +1,245 @@
+ 
+.hero_section {
+    padding: 120px 0 60px 0;
+    background: #28293E;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    color: #1b1b1b;
+    @media (max-width: 575px) { 
+        padding: 60px 0 60px 0;
+    }
+    @media (max-width: 767px) { 
+        padding: 60px 0 60px 0;
+    }
+    .star-image {
+        position: absolute;
+        top: 25px;
+        right: 18%;
+        max-width: 148px;
+        max-height: 148px;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        animation: rotate 5s infinite;
+        img {
+            @keyframes rotate {
+                50% {
+                  transform: rotate(180deg);
+                }
+            }
+        }
+          @media (max-width: 1199px) { 
+            top: 28px;
+            right: 5%;
+            max-width: 130px;
+            max-height: 130px;
+           }
+           @media (max-width: 991px) { 
+            top: 20px;
+            left: 28%;
+          }
+           @media (max-width: 575px) { 
+           display: none;
+         }
+    }
+    .hero_banner{
+        max-width: 570px;
+        width: 100%;
+        max-height: 600px;
+        height: 100%;
+        margin: auto;
+        position: relative;
+        background: url("../images/intro_section/Oval.png") no-repeat center center;
+        @media (max-width: 575px) { 
+            
+            background: unset;
+         }
+           .leptop-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 276px;
+            max-height: 305px;
+            animation: movedown 6s infinite ease-in-out;
+            @keyframes movedown {
+                50%{
+                    transform: translateY(-40px);
+                }
+            }
+
+            @media (max-width: 1399px) {
+                max-width: 200px;
+                max-height: 250px;
+            }
+
+            @media (max-width: 991px) { 
+                position: relative;
+                top: 7%;
+             }
+
+             @media (max-width: 575px) {
+                max-width: 120px;
+                max-height: 180px;
+            }
+        }
+        .starball{
+            position: absolute;
+            top: 6%;
+            left: 50%;
+            max-width: 100px;
+            max-height: 100px;
+            animation: scaleUp 4s infinite ease;
+            @keyframes scaleUp {
+                50%{
+                    transform: scale(1.2);
+                }
+            }
+             @media (max-width: 575px) {
+                max-width: 60px;
+            }
+        }
+        .circle-path{
+            position: absolute;
+            top: 12%;
+            right:  3%;
+            max-width: 112px;
+            max-height: 82px;
+            animation: moveLeft 5s infinite ease;
+            @keyframes moveLeft {
+                50%{
+                    transform: translateX(-40px);
+                }
+            }
+
+            @media (max-width: 1199px) {
+                top: 20%;
+                right: 0;
+            }
+
+            @media (max-width: 991px) {
+                top: 20%;
+                right: 0;
+            }
+
+            @media (max-width: 991px) { 
+                // position: relative;
+             }
+
+             
+             @media (max-width: 575px) {
+                display: none;
+            }
+        }
+        .arrow-line{
+            position: absolute;
+            bottom:  0;
+            left:  45%;
+            max-width: 100px;
+            max-height: 100px;
+            animation: moveUp 6s infinite ease-in-out;
+            @keyframes moveUp {
+                50%{
+                    transform: translateY(20px);
+                }
+            }
+
+            @media (max-width: 991px) { 
+                // position: relative;
+                display: none;
+             }
+        }
+        .card{
+            position: absolute;
+            bottom: 3%;
+            left: 5%;
+            max-width: 214px;
+            max-height: 112px;
+            animation: flipY 5s infinite ease;
+            @keyframes flipY {
+                50%{
+                    transform: rotateY(-180deg);
+                }
+            }
+
+            @media (max-width: 1399px) {
+                max-width: 180px;
+                max-height: 100px;
+            }
+
+            @media (max-width: 1199px) {
+                top: 70%;
+                left: 3%;
+            }
+
+            @media (max-width: 991px) { 
+                // position: relative;
+             }
+
+             @media (max-width: 575px) {
+                max-width: 120px;
+                max-height: 180px;
+            }
+        }
+        .hero{
+            position: absolute;
+            bottom: 50px;
+            right: 12px;
+            max-width: 246px;
+            max-height: 305px;
+            animation: scaleUp2 4s infinite ease;
+            @keyframes scaleUp2 {
+                50%{
+                    transform: scale(0.9);
+                }
+            }
+
+            @media (max-width: 1399px) {
+                max-width: 200px;
+                max-height: 205px;
+            }
+
+            @media (max-width: 1199px) {
+                bottom: 100px;
+            }
+            @media (max-width: 991px) { 
+                position: relative;
+                bottom: 0;
+                left: 50%;
+             }
+
+             @media (max-width: 575px) {
+                max-width: 120px;
+                max-height: 180px;
+            }
+        }
+        .cicle-line{
+            position: absolute;
+            top: 60%;
+            left: 0;
+            max-width: 142px;
+            max-height: 73px;
+            animation: scaleUp 4s infinite ease;
+            @keyframes scaleUp {
+                50%{
+                    transform: scale(1.2);
+                }
+            }
+
+            @media (max-width: 1199px) {
+                top: 50%;
+            }
+            @media (max-width: 991px) { 
+                display: none;
+             }
+        }
+
+    }
+    .mini-img {
+        max-width: 48px;
+        width: 48px;
+        max-height: 48px;
+        height: 48px;
+        border-radius: 50px; 
+    }
+}

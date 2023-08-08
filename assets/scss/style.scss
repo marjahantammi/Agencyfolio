@@ -1,0 +1,12 @@
+
+//IMPORT All COMPONENTS
+
+@use './components/buttons';
+@use './components/typography';
+@use './components/animations';
+@use './components/mixins';
+@use './components/global';
+
+//IMPORT All SECTION
+
+@use './section/hero-section';

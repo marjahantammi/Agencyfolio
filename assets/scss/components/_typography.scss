@@ -1,0 +1,228 @@
+
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;800&family=Fira+Code:wght@300;400;700&family=Poppins:wght@300;400&display=swap');
+:root{
+   --body-font:  'Epilogue';
+	--n-100:  #FFF;
+   --bg-one: #28293E;
+   --bg-two: #B550F8;
+   --baby-pink: #FDF0E9;
+   --border-color: #EF6D58;
+   --text-color: #391400;
+   --hr: #F3D1BF;
+   --inner: #EF6D58;
+   --gray: rgba(255, 255, 255, 0.64);
+}
+ html{
+   scroll-behavior: smooth;
+ }
+ body{
+	padding: 0;
+	margin: 0;
+   	font-family: var(--body-font);
+   	font-size: 16px;
+   	line-height: 32px;
+   	padding: 0px;
+   	margin: 0px;
+   	text-decoration: none;
+   	box-sizing: border-box;
+   	font-weight: 400;
+   	overflow-x: hidden;
+	overflow-y: scroll;
+   	position: relative;
+   @media (max-width:575px) {
+		font-size: 16px;
+	}
+ }
+h1,
+h1 > a,
+h2,
+h2 > a,
+h3,
+h3 > a,
+h4,
+h4 > a,
+h5,
+h5 > a,
+h6,
+h6 > a,
+.display-one, .display-two, .display-three, .display-four, 
+.heading-one, .heading-two, .heading-three, .heading-four, .heading-five, .heading-six{
+	font-family: var(--body-font);
+	color: var(--n-100);
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+	display: block;
+	// text-transform: capitalize;
+	line-height: 130%;
+	transition: all 0.3s;
+	span{
+		font-size: inherit;
+		font-family: inherit;
+		color: inherit;
+		line-height: inherit;
+		font-weight: inherit;
+	}
+}
+h1, .heading-one {
+	font-size: 72px;
+	padding: 24px 0px;
+	@media (max-width:1399px) {
+		font-size: 60px;
+	}
+	@media (max-width:991px) {
+		font-size: 50px;
+	}
+	@media (max-width:575px) {
+		font-size: 40px;
+	}
+}
+h2, .heading-two {
+	font-size: 56px;
+	@media (max-width:1399px) {
+		font-size: 48px;
+	}
+	@media (max-width:991px) {
+		font-size: 40px;
+	}
+	@media (max-width:575px) {
+		font-size: 34px;
+	}
+	@media (max-width:480px) {
+		font-size: 30px;
+	}
+}
+h3, .heading-three {
+	font-size: 40px;
+	@media (max-width:991px) {
+		font-size: 38px;
+	}
+	@media (max-width:575px) {
+		font-size: 30px;
+	}
+}
+h4, .heading-four {
+	font-size: 32px;
+	@media (max-width:991px) {
+		font-size: 26px;
+	}
+}
+h5, .heading-five {
+	font-size: 24px;
+	color: var(--inner);
+	@media (max-width:767px){
+		font-size: 20px;
+	}
+	@media (max-width:575px){
+		font-size: 18px;
+	}
+}
+h6, .heading-six {
+	font-size: 18px;
+}
+p , .text_one{
+    color: var(--gray);
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 166%;
+	padding: 0px 0px 34px 0px;
+	// @media (max-width:575px) {
+	// 	font-size: 16px;
+	// }
+}
+
+
+header{
+    background: #28293E;
+    @media (max-width: 920px){
+        background: #28293E;
+    }
+
+    nav{
+      display: flex;
+      height: 80px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        li{
+            margin: 0 5px;
+            a{
+                color: var(--n-100);
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 8px 15px;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+                &.active, &:hover{
+                    color: var(--n-100);
+                    background: var(--inner);
+                  }
+              }
+          }
+      }
+      .menu-btn i{
+        color: var(--inner);
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+      }
+      input[type="checkbox"]{
+        display: none;
+      }
+    }
+
+    @media (max-width: 1000px){
+        nav{
+          padding: 0 40px 0 50px;
+        }
+      }
+      @media (max-width: 920px) {
+        nav .menu-btn i{
+          display: block;
+        }
+        #click:checked ~ .menu-btn i:before{
+          content: "\f00d";
+        }
+        nav ul{
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          background: #28293E;
+          height: 100vh;
+          width: 100%;
+          text-align: center;
+          display: block;
+          transition: all 0.3s ease;
+        }
+        #click:checked ~ ul{
+          left: 0;
+        }
+        nav ul li{
+          width: 100%;
+          margin: 40px 0;
+        }
+        nav ul li a{
+          width: 100%;
+          margin-left: -100%;
+          display: block;
+          font-size: 20px;
+          transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        #click:checked ~ ul li a{
+          margin-left: 0px;
+        }
+        nav ul li a.active,
+        nav ul li a:hover{
+          background: none;
+          color: var(--inner);
+        }
+    } 
+}
